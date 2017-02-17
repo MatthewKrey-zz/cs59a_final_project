@@ -41,12 +41,13 @@ Would you like to play a game about my favorite data set with me? \n
 2. Yes
 3. Maybe \n'''
 
-answer = raw_input("> ")
 
-if answer == "1":
+welcome_answer = raw_input("> ")
+
+if welcome_answer == "1":
     print "Okay. No worries. Perhaps another time."
 
-elif answer == "3":
+elif welcome_answer == "3":
     print "Are you sure? It is SUPER fun! I love data. I think you will too. Want to join the fun? \n\n 1. No \n 2. Yes\n"
     maybe_answer = raw_input("> ")
     if maybe_answer == "1":
@@ -54,9 +55,27 @@ elif answer == "3":
     if maybe_answer == "2":
         print "Right on! Let's play! :)"
 
-elif answer == "2":
+        print '''\nOkay. We are going to explore my favorite data set, the Iris Data Set, by sampling Irises and guessing
+            what species they are! \nIt has my favorite Iris species in it: %s.\n\nTo determine what species we would like to guess,
+            we are going to look at each Iris's features: %s.\n\nLet's take a look at the data together now: \n''' % (
+        iris.target_names, iris.feature_names,)
+
+        for i in range(len(iris.target)):
+            print "Example %d: label %s, features %s" % (i, iris.target[i], iris.data[i])
+
+        print '''\nThis is my favorite part! First, you pick a random Iris from the data set and you guess what species it is.
+Then I'll pick a random Iris from the data set and I'll guess that species it is. Then we can compare and see how we both did!'''
+
+elif welcome_answer == "2":
     print "Right on! You are going to love this game."
 
 
-    # for i in range(len(iris.target)):
-    #     print "Example %d: label %s, features %s" % (i, iris.target[i], iris.data[i])
+    print '''\nOkay. We are going to explore my favorite data set, the Iris Data Set, by sampling Irises and guessing
+    what species they are! \nIt has my favorite Iris species in it: %s.\n\nTo determine what species we would like to guess,
+    we are going to look at each Iris's features: %s.\n\nLet's take a look at the data together now: \n''' % (iris.target_names,iris.feature_names, )
+
+    for i in range(len(iris.target)):
+        print "Example %d: label %s, features %s" % (i, iris.target[i], iris.data[i])
+
+    print '''\nThis is my favorite part! First, you pick a random Iris from the data set and you guess what species it is.
+Then I'll pick a random Iris from the data set and I'll guess that species it is. Then we can compare and see how we both did!'''
