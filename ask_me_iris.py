@@ -2,9 +2,12 @@
 
 import sklearn
 import numpy as np
+import pandas as pd
 import pydotplus
 from sklearn.datasets import load_iris
 from sklearn import tree
+from numpy import random, arange
+from random import randrange
 from sklearn.externals.six import StringIO
 
 # Test data set
@@ -79,3 +82,15 @@ elif welcome_answer == "2":
 
     print '''\nThis is my favorite part! First, you pick a random Iris from the data set and you guess what species it is.
 Then I'll pick a random Iris from the data set and I'll guess that species it is. Then we can compare and see how we both did!'''
+
+    # list = []
+    # for i in range(len(iris.target)):
+    #     list.append(iris.data[i])
+    # print list
+    # selected = train_spam[np.random.randint(train_spam.shape[0], size=1000)]
+    shape = np.shape(iris.data)
+    shuffle = np.random.shuffle(iris.data)
+    X_train = iris.data[:200, 1:5]
+    selected = iris.data[np.random.randint(iris.data.shape[0], size=1)]
+    print selected
+
