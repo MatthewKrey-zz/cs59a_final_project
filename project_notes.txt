@@ -29,16 +29,23 @@
 2) Train Classifier
     - Split data into training data & target data
 
+
 ### Import Data & Train Classifier ahead of User engagement with App for best UX ###
+
 
 3) Intro & Prompt User
     - Welcome
     - Do you want to Ask Iris?
         - "Adventure Story" flow
-    - If yes, present user with sample Iris and ask to guess species
+    - If yes, present user with random example Iris and ask to guess species
+    - If no, end
 
 
-4)
+4) Feed Classifier Iris random example
+    - Return classification
+
+
+5) Compare User Response to Classifier Response
 
 
 --------------------------------------------------------------------------------------------------
