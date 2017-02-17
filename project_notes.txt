@@ -1,0 +1,58 @@
+##################
+#      DEMO      #
+##################
+
+
+*** Minimum requirements - "if conditions" and "loops" ***
+
+
+/// 2 Central Themes of Human-AI Interaction ///
+
+1) Algorithm
+2) User
+
+
+/// Demo Experience ///
+
+1) Ask User to participate
+2) Present User with data set
+3) Present User with example and prompt guess of Iris Species
+4) Present Classifier with example and return Classifier guess of Iris Species
+5) Compare Human vs. AI responses
+
+
+--------------------------------------------------------------------------------------------------
+
+1) Import Iris Data Set
+
+
+2) Train Classifier
+    - Split data into training data & target data
+
+### Import Data & Train Classifier ahead of User engagement with App for best UX ###
+
+3) Intro & Prompt User
+    - Welcome
+    - Do you want to Ask Iris?
+        - "Adventure Story" flow
+    - If yes, present user with sample Iris and ask to guess species
+
+
+4)
+
+
+--------------------------------------------------------------------------------------------------
+
+
+##################
+#  PRESENTATION  #
+##################
+
+1) Explain your chosen project
+2) Show demo & run code in real time
+3) Explain the details and implementation issues
+4) Discuss challenges you faced
+5) Describe future work - How could your project be improved? Future implications of project work?
+
+
+--------------------------------------------------------------------------------------------------
