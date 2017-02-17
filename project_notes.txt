@@ -27,7 +27,8 @@
 
 
 2) Train Classifier
-    - Split data into training data & target data
+    - Split data into training data & test data
+    - Import Classifier & Train 
 
 
 ### Import Data & Train Classifier ahead of User engagement with App for best UX ###
