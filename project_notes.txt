@@ -23,12 +23,51 @@
 
 --------------------------------------------------------------------------------------------------
 
+##################
+#      DATA      #
+##################
+
+******** DOUBLE-CHECK THIS **************
+
+Feature Set 1) Petal Width
+
+    - If petal width <= 0.8 (cm) , then setosa
+
+    - If petal width >0.8 (cm) and <= 1.75 (cm), then versicolor or virginica
+
+
+Feature Set 2) Petal Width + Petal Length
+
+    - If petal width > 0.8 (cm) and petal width (cm) <= 1.75 and petal length (cm) <= 4.95
+      and petal width (cm) <= 1.65, then versicolor
+
+    - If petal width > 0.8 (cm) and petal width (cm) <= 1.75 and petal length (cm) <= 4.95
+      and petal width (cm) > 1.65, then virginica
+
+    - If petal width > 0.8 (cm) and petal width (cm) <= 1.75 and petal length (cm) > 4.95
+      and petal width (cm) <= 1.55, then virginica
+
+    - If petal width > 0.8 (cm) and petal width (cm) > 1.75 and petal length (cm) > 4.85.
+      then virginica
+
+
+
+Feature Set 3) Petal Width + Petal Length + Sepal Length
+
+    - If petal width > 0.8 (cm) and petal width (cm) <= 1.75 and petal length (cm) > 4.95
+      and petal width (cm) <= 1.55, then virginica
+
+    - If petal width > 0.8 (cm) and petal width (cm) <= 1.75 and petal length (cm) > 4.95
+      and petal width (cm) <= 1.55, and sepal length (cm) <= 6.95
+
+--------------------------------------------------------------------------------------------------
+
 1) Import Iris Data Set
 
 
 2) Train Classifier
     - Split data into training data & test data
-    - Import Classifier & Train 
+    - Import Classifier & Train
 
 
 ### Import Data & Train Classifier ahead of User engagement with App for best UX ###
