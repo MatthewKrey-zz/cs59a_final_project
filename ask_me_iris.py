@@ -63,11 +63,72 @@ elif welcome_answer == "3":
             we are going to look at each Iris's features: %s.\n\nLet's take a look at the data together now: \n''' % (
         iris.target_names, iris.feature_names,)
 
-        for i in range(len(iris.target)):
-            print "Example %d: label %s, features %s" % (i, iris.target[i], iris.data[i])
+        print '''\nThis is my favorite part! First, you pick a random feature set from the Iris data set and you guess what species it is based on its features.
+        Then I'll pick a random Iris from the data set and I'll guess that species it is. Then we can compare and see how we both did!\n'''
 
-        print '''\nThis is my favorite part! First, you pick a random Iris from the data set and you guess what species it is.
-Then I'll pick a random Iris from the data set and I'll guess that species it is. Then we can compare and see how we both did!'''
+        # Select Random Iris features from Iris Data Set
+
+        print "\nWhen you are ready, let's do this!\n\n 1. Choose Random Iris\n 2. Play another time.\n"
+
+        user_selected_iris = raw_input("> ")
+
+        if user_selected_iris == "2":
+            print "Too bad... Perhaps another day then."
+
+        elif user_selected_iris == "1":
+            shape = np.shape(iris.data)
+            shuffle = np.random.shuffle(iris.data)
+            X_train = iris.data[:200, 1:5]
+            random_user_selection = iris.data[np.random.randint(iris.data.shape[0], size=1)]
+            print "Your randomly selected features are: %s" % (random_user_selection)
+
+            # Capture and store user's guess
+
+            print "\nBased on these features, what species of Iris do you think your flower is?\n"
+            print "\n0. setosa \n1. versicolor \n2. virginica"
+            guess = raw_input("> ")
+
+            if guess == "0":
+                print "\nOkay. setosa. Your guess is as good as mine... OR IS IT?!\n"
+                user_guess = "setosa"
+            elif guess == "1":
+                print "\nOkay. versicolor. Your guess is as good as mine... OR IS IT?!\n"
+                user_guess = "versicolor"
+            elif guess == "2":
+                print "\nOkay. virginica. Your guess is as good as mine... OR IS IT?!\n"
+                user_guess = "virginica"
+
+            print "TEST TEST: user_guess = %s" % (user_guess)
+
+            # Feed user example to Iris and see what her guess is
+
+            print "\n\nNow it's my turn... I am one with the Force, the Force is with me!"
+
+            print "\n\nYour features are: %s" % (random_user_selection)
+            iris_guess = clf.predict(random_user_selection)
+            iris_answer = str(iris_guess)
+            print "\n\nHmmm... I think it is: %s" % (iris_guess)
+
+            # Convert iris_guess & store iris_final_answer
+
+            iris_final_answer = ""
+            if "[0]" in iris_answer:
+                iris_final_answer = "setosa"
+            elif "[1]" in iris_answer:
+                iris_final_answer = "versicolor"
+            elif "[2]" in iris_answer:
+                iris_final_answer = "virginica"
+
+            # Compare user_guess vs. iris_guess
+            print "You guessed: %s" % (user_guess)
+            print "I guessed: %s, %s" % (iris_guess, iris_final_answer)
+
+            # Print Final Result
+
+            if user_guess == iris_final_answer:
+                print "\nWe agree!"
+            elif user_guess != iris_final_answer:
+                print "\nYou think %s, I think %s ... Who is the winner???" % (user_guess, iris_final_answer)
 
 elif welcome_answer == "2":
     print "Right on! You are going to love this game."
@@ -80,17 +141,71 @@ elif welcome_answer == "2":
     for i in range(len(iris.target)):
         print "Example %d: label %s, features %s" % (i, iris.target[i], iris.data[i])
 
-    print '''\nThis is my favorite part! First, you pick a random Iris from the data set and you guess what species it is.
-Then I'll pick a random Iris from the data set and I'll guess that species it is. Then we can compare and see how we both did!'''
+    print '''\nThis is my favorite part! First, you pick a random feature set from the Iris data set and you guess what species it is based on its features.
+Then I'll pick a random Iris from the data set and I'll guess that species it is. Then we can compare and see how we both did!\n'''
 
-    # list = []
-    # for i in range(len(iris.target)):
-    #     list.append(iris.data[i])
-    # print list
-    # selected = train_spam[np.random.randint(train_spam.shape[0], size=1000)]
-    shape = np.shape(iris.data)
-    shuffle = np.random.shuffle(iris.data)
-    X_train = iris.data[:200, 1:5]
-    selected = iris.data[np.random.randint(iris.data.shape[0], size=1)]
-    print selected
 
+    # Select Random Iris features from Iris Data Set
+
+    print "\nWhen you are ready, let's do this!\n\n 1. Choose Random Iris\n 2. Play another time.\n"
+
+    user_selected_iris = raw_input("> ")
+
+    if user_selected_iris == "2":
+        print "Too bad... Perhaps another day then."
+
+    elif user_selected_iris == "1":
+        shape = np.shape(iris.data)
+        shuffle = np.random.shuffle(iris.data)
+        X_train = iris.data[:200, 1:5]
+        random_user_selection = iris.data[np.random.randint(iris.data.shape[0], size=1)]
+        print "Your randomly selected features are: %s" % (random_user_selection)
+
+        # Capture and store user's guess
+
+        print "\nBased on these features, what species of Iris do you think your flower is?\n"
+        print "\n0. setosa \n1. versicolor \n2. virginica"
+        guess = raw_input("> ")
+
+        if guess == "0":
+            print "\nOkay. setosa. Your guess is as good as mine... OR IS IT?!\n"
+            user_guess = "setosa"
+        elif guess == "1":
+            print "\nOkay. versicolor. Your guess is as good as mine... OR IS IT?!\n"
+            user_guess = "versicolor"
+        elif guess == "2":
+            print "\nOkay. virginica. Your guess is as good as mine... OR IS IT?!\n"
+            user_guess = "virginica"
+
+        print "TEST TEST: user_guess = %s" % (user_guess)
+
+        # Feed user example to Iris and see what her guess is
+
+        print "\n\nNow it's my turn... I am one with the Force, the Force is with me!"
+
+        print "\n\nYour features are: %s" % (random_user_selection)
+        iris_guess = clf.predict(random_user_selection)
+        iris_answer = str(iris_guess)
+        print "\n\nHmmm... I think it is: %s" % (iris_guess)
+
+        # Convert iris_guess & store iris_final_answer
+
+        iris_final_answer = ""
+        if "[0]" in iris_answer:
+            iris_final_answer = "setosa"
+        elif "[1]" in iris_answer:
+            iris_final_answer = "versicolor"
+        elif "[2]" in iris_answer:
+            iris_final_answer = "virginica"
+
+        # Compare user_guess vs. iris_guess
+        print "You guessed: %s" % (user_guess)
+        print "I guessed: %s, %s" % (iris_guess, iris_final_answer)
+
+
+        # Print Final Result
+
+        if user_guess == iris_final_answer:
+            print "\nWe agree!"
+        elif user_guess != iris_final_answer:
+            print "\nYou think %s, I think %s ... Who is the winner???" % (user_guess, iris_final_answer)
