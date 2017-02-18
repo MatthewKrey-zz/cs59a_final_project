@@ -82,7 +82,7 @@ elif welcome_answer == "3":
         print "Your features are: %s" % random_user_selection6
         time.sleep(1)
 
-        print "\nDo you notice any patterns? If you do, you using the same process our classifier will use.\n"
+        print "\nDo you notice any patterns? If you do, you are using the same process our classifier will use.\n"
 
         print '''\nThis is my favorite part! Let's have you pick a random flower. Then I will pick a random flower.\n
                 Based on the features of our flowers, we will both guess what species they are. Then we can compare and see how we both did!\n'''
@@ -149,7 +149,7 @@ elif welcome_answer == "2":
             If a label is 0, the flower is a setosa.\n
             If a label is 1, the flower is a versicolor.\n
             If a label is 2, the flower is a virginica.\n
-            \nLet's use what we learned to try and guess \n''' % (iris.feature_names, iris.target_names)
+            \nLet's look at a few examples \n''' % (iris.feature_names, iris.target_names)
 
     count = 0
     for i in range(len(iris.target)):
@@ -226,6 +226,8 @@ elif welcome_answer == "2":
         print "\n\nYour features are: %s" % (random_user_selection7)
         iris_guess = clf.predict(random_user_selection7)
         iris_answer = str(iris_guess)
+        print "\nLet me take a guess based on these features..."
+        time.sleep(5)
         print "\n\nHmmm... I think it is: %s" % (iris_guess)
 
         # Convert iris_guess & store iris_final_answer
