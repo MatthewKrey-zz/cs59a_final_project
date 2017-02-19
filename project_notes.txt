@@ -1,6 +1,6 @@
-##################
-#      DEMO      #
-##################
+######################
+#      OVERVIEW      #
+######################
 
 
 *** Minimum requirements - "if conditions" and "loops" ***
@@ -26,6 +26,7 @@
 ##################
 #      DATA      #
 ##################
+
 
 ******** DOUBLE-CHECK THIS **************
 
@@ -62,6 +63,11 @@ Feature Set 3) Petal Width + Petal Length + Sepal Length
 
 --------------------------------------------------------------------------------------------------
 
+##################
+#      DEMO      #
+##################
+
+
 1) Import Iris Data Set
 
 
@@ -81,19 +87,27 @@ Feature Set 3) Petal Width + Petal Length + Sepal Length
     - If no, end
 
 
-4) Feed Classifier Iris random example
+4) "Train" with User
+    - Present individual examples to User with correct classification provided
+    - Look for patterns in features with the User (Feature Engineering)
+
+
+5) When at least one pattern is identified, present random example to User and prompt for a guess
+
+
+6) Feed Classifier Iris random example
     - Return classification
 
 
-5) Compare User Response to Classifier Response
+7) Compare User Response to Classifier Response
 
 
 --------------------------------------------------------------------------------------------------
 
-
 ##################
 #  PRESENTATION  #
 ##################
+
 
 1) Explain your chosen project
 2) Show demo & run code in real time

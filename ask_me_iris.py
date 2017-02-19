@@ -1,15 +1,9 @@
 # Import Dependent Libraries & Iris Data Set
 
-import sklearn
 import numpy as np
-import pandas as pd
-import pydotplus
 import time
 from sklearn.datasets import load_iris
 from sklearn import tree
-from numpy import random, arange
-from random import randrange
-from sklearn.externals.six import StringIO
 
 # Test data set
 
@@ -227,7 +221,7 @@ elif welcome_answer == "2":
         iris_guess = clf.predict(random_user_selection7)
         iris_answer = str(iris_guess)
         print "\nLet me take a guess based on these features..."
-        time.sleep(5)
+        time.sleep(8)
         print "\n\nHmmm... I think it is: %s" % (iris_guess)
 
         # Convert iris_guess & store iris_final_answer
@@ -250,6 +244,6 @@ elif welcome_answer == "2":
         if user_guess == iris_final_answer:
             print "\nWe agree! We both classified our flower as the same species"
         elif user_guess != iris_final_answer:
-            print "\nYou think %s, I think %s ... we both classified our flowers differently. \nPerhaps we can go back and figure out why. \nThanks for playing! " % (user_guess, iris_final_answer)
+            print "\nYou think %s, I think %s ... we both classified our flowers differently. \nPerhaps we can go back and figure out why. \n\nThanks for playing! " % (user_guess, iris_final_answer)
 
         print "\n\n\n***THE END***"
