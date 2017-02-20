@@ -64,5 +64,4 @@ I have also tried to consider differences in learning styles - I personally lear
  
 
 Thank you @adam-p for posting a [SUPER helpful Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)for great README docs! 
-Thank you [Mohammad Shokoohi-Yekta](https://www.linkedin.com/in/mohammad-shokoohi-yekta-a1300028) for helping us to begin  
-working with Python adn introducing our class to the exciting world of AI and Data Science!  
+Thank you [Mohammad Shokoohi-Yekta](https://www.linkedin.com/in/mohammad-shokoohi-yekta-a1300028) for helping us to begin working with Python adn introducing our class to the exciting world of AI and Data Science!  
