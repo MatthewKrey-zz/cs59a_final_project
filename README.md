@@ -16,6 +16,12 @@ I have also tried to consider differences in learning styles - I personally lear
  submit a [Pull Request](https://help.github.com/articles/creating-a-pull-request/), or please share what you have 
  learned with the community of curious learners on Medium (also @Reelkreyz). 
 
+### How do I use Ask Me Iris CLI?
+
+1. [Get up-and-running with Git](https://guides.github.com/activities/hello-world/)
+2. [Clone this repo](https://help.github.com/articles/cloning-a-repository/)
+3. [Run "python ask_me_iris.py" from your Command Line](http://stackoverflow.com/questions/20318158/run-python-script-directly-from-command-line) 
+
 ### Step 1) I hear about AI, ML and Deep Learning all the time, but I am not a Data Scientist and I do not have a Ph.D - What is AI? What is ML? Where do I start? 
 
 ##### I don't have time to read books or I don't learn best through reading alone:
