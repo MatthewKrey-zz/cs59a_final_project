@@ -58,6 +58,8 @@ I have also tried to consider differences in learning styles - I personally lear
  ### Step 4) I want to share what I have learned and the projects I have built with the world!
  
  * Share ideas and connect with others on [Medium](https://medium.com/) and Twitter 
+ * [Build Side-Projects](https://medium.com/learning-new-stuff/lesson-learned-running-a-side-project-for-one-month-2a6f87ec1320#.q3jw00uo1) 
+ and [share with others on GitHub](https://guides.github.com/activities/hello-world/) 
  
  
 
