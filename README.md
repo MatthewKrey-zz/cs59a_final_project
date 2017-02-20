@@ -32,7 +32,7 @@ I have also tried to consider differences in learning styles - I personally lear
 
 ### Step 2) Okay. That all makes sense conceptually, and is fascinating - but can I visualize an example of Machine Learning step-by-step?
  
- ###### Absolutely! [A Visual Introduction to Machine Learning - R2D3](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/) 
+###### Absolutely! [A Visual Introduction to Machine Learning - R2D3](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/) 
 
 
 ### Step 3) This is AMAZING! But I don't know how to code yet - Argh! How can I begin learning how to use Machine Learning tools and techniques?
@@ -58,6 +58,7 @@ I have also tried to consider differences in learning styles - I personally lear
  ### Step 4) I want to share what I have learned and the projects I have built with the world!
  
  * Share ideas and connect with others on [Medium](https://medium.com/) and Twitter 
+ 
  
 
 Thank you @adam-p for posting a [SUPER helpful Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)for great README docs! 
