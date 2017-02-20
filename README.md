@@ -37,6 +37,12 @@ I have also tried to consider differences in learning styles - I personally lear
 
 ### Step 3) This is AMAZING! But I don't know how to code yet - Argh! How can I begin learning how to use Machine Learning tools and techniques?
   
+  Reflecting on a learning *plan* is super helpful. Embracing a [Growth Mindset](https://www.mindsetworks.com/science/), 
+    [learning how to learn](https://www.youtube.com/watch?v=56d3zu5UJiw) - or if you prefer a more [academic approach](https://www.youtube.com/watch?v=56d3zu5UJiw) -
+      and [setting up a consistent routine](https://medium.com/xeneta/how-to-gain-new-skills-at-work-923bb088a352#.v2aumcc89) 
+      is super helpful to celebrate learning and remain resilient to the challenges of self-education while working and 
+      fulfilling your responsibilities. 
+  
   I have found the below to be helpful (in order), but the learning journey continues: 
   
   1. [Learn Python the Hard Way - Zed Shaw](https://learnpythonthehardway.org/book/)
@@ -44,6 +50,14 @@ I have also tried to consider differences in learning styles - I personally lear
   3. [DATAQUEST](https://www.dataquest.io/)
   4. [Josh Gordon - Machine Learning Recipes](https://www.youtube.com/watch?v=cKxRvEZd3Mw&list=PLOU2XLYxmsIIuiBfYad6rFYQU_jL2ryal&index=7)
   
+  Or, if you already have some programming experience:
+  
+  1. [Machine Learning in a Year: From being a total ml noob to start using it at work - Per Harold Borgen](https://medium.com/learning-new-stuff/machine-learning-in-a-year-cdb0b0ebd29c#.nhg90adrz)
+  
+  
+ ### Step 4) I want to share what I have learned and the projects I have built with the world!
+ 
+ * Share ideas and connect with others on [Medium](https://medium.com/) and Twitter 
  
 
 Thank you @adam-p for posting a [SUPER helpful Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)for great README docs! 
