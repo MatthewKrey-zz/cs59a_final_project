@@ -16,7 +16,7 @@ I have also tried to consider differences in learning styles - I personally lear
  submit a [Pull Request](https://help.github.com/articles/creating-a-pull-request/), or please share what you have 
  learned with the community of curious learners on Medium (also @Reelkreyz). 
 
-### How do I use Ask Me Iris CLI?
+#### How do I use Ask Me Iris CLI?
 
 1. [Get up-and-running with Git](https://guides.github.com/activities/hello-world/)
 2. [Clone this repo](https://help.github.com/articles/cloning-a-repository/)
